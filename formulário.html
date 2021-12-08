@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Site da empresa Noxus</title>
+    
+    
+</head>
+<body>
+
+    <div class="menudosite">
+       
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos á venda</a></li>
+            <li><a href="sobre.html">Sobre a empresa</a></li>
+            <li><a href="contatos.html">Contatos da empresa</a></li>
+            <li><a href="formulário.html">Dados pessoais</a> </li>
+        </ul>  
+   
+       </div> 
+
+    <form action="resp.php" method= "get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nc">Nome completo</label>
+            <input type="text" name="nomecompleto" id="nc" placeholder="Seu nome completo aqui"> 
+            <br></br>
+            <label for="idade">Idade: </label>
+            <input type="numb" name="idade" id="idade" placeholder="Sua idade">
+            <br></br>
+            <label for="email"> E-mail: </label>
+            <input type="email" name="email" id="email" placeholder="Seu e-mail para contato">
+            <br></br>
+            <label for="data">Data de nascimento: </label>
+            <input type="date" name="nascimento" id="data" placeholder="Em que ano nasceu?">
+            <br></br>
+            <label for="radio"> Sexo: </label>
+            <input type="radio" name="sexo" value="mas">
+            <label>Masculino</label>
+            <input type="radio" name="sexo" value="fem">
+            <label>Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="lgd">Logradouro</label>
+            <input type="text" name="logradouro" id="lgd" placeholder="Rua, Avenida, Alameda, ..."> 
+            <br></br>
+            <label for="endereço">Nome da Rua, Avenida, ...</label>
+            <input type="text" name="nomeendereço" id="endereço" placeholder="Ex.: Laura Diegoli Battistotti">
+            <br></br>
+            <label for="número">Número:</label>
+            <input type="number" name="numero" id="número" placeholder="Ex.: 80">
+            <br></br>
+            <label for="Bairro">Bairro:</label>
+            <input type="text" name="bairro" id="Bairro" placeholder="Ex.: Santa Rita">
+            <br></br>
+            <label for="Cidade">Cidade:</label>
+            <input type="text" name="cidade" id="Cidade" placeholder="Ex.: Brusque">
+            <br></br>
+        </fieldset>
+        <fieldset> 
+            <legend>Orçamento</legend>
+            <label for="produto">Produto:</label>
+            <input type="text" name="prod" id="produto" placeholder="Nome do produto visto no site"> 
+            <br></br>
+            <label for="quantidade">Quantidade desejada:</label>
+            <input type="number" name="quant" id="quantidade" placeholder="Quanto deseja comprar?">
+            <br></br>
+            <label for="preço">Preço visto no site:</label>
+            <input type="number" name="preço" id="preço" placeholder="Preço anunciado" step="any">
+            <br></br>
+            <label for="radio">Forma de pagamento:</label>
+            <input type="radio" name="paga" value="Dinheiro"> 
+            <label>Dinheiro</label>
+            <input type="radio" name="paga" value="Cartão de crédito"> 
+            <label>Cartão de crédito</label>
+            <input type="radio" name="paga" value="Cartão de débito"> 
+            <label>Cartão de débito</label>
+            <br></br>
+            <label for="desconto">Porcentagem de desconto pretendido:</label>
+            <input type="number" name="Desc" id="desconto" placeholder="Porcentagem desejada">
+            <br></br>
+        </fieldset>       
+            <input type="submit" name="" value="Enviar">
+            <input type="reset" value="Apagar tudo">
+        </fieldset>
+    </form>
+</body>
+</html>
